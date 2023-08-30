@@ -12,7 +12,7 @@
 </head>
 <body>
      <header>
-        <nav>
+        <nav id="menu">
             <ul class="indexnav">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="">Promociones</a></li>
@@ -42,7 +42,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="Mochilas">
+                <div class="mochilas">
                     <h2>Mochilas</h2>
                     <a href="">Ver Detalles</a>
                 </div>
@@ -64,6 +64,18 @@
 
     
 </body>
+<script>
+    window.addEventListener('scroll', function() {
+  var menu = document.getElementById('menu');
+  
+  if (window.scrollY > 0) {
+    menu.classList.add('fixed-nav');
+  } else {
+    menu.classList.remove('fixed-nav');
+  }
+});
+
+</script>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
     </style>
